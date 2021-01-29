@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <div class="grid">
+        <!--내용-->
+        <h1 id="d-day"></h1>
+        <img src="KakaoTalk_20210128_185024626.png" />
+        <p>최기주쿤의 충북대 합격을 기원합니다!!</p>
+        <a href="https://www.chungbuk.ac.kr/" target="_blank" class="button">충북대 바로가기</a>
+        </div>
+        <div class="blur"></div>
+
+<script>
+    //디데이 종료 일자 설정
+    var countDownDate = new Date("Feb 7, 2021 00:00:00").getTime();
+    //1초마다 갱신되도록 함수 생성,실행
+    var x = setInterval(function() {
+    // 오늘 날짜 등록
+    var now = new Date().getTime();
+    // 종료일자에서 현재일자를 뺀 시간
+    var distance = countDownDate - now;
+    // 각 변수에 일, 시, 분, 초를 등록 (일 만 있다)
+    var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //id가 d-day인 HTML코드에 내용 삽입
+    document.getElementById("d-day").innerHTML = "충북대 정시 발표 D-" + d; });
+    </script>
+</body>
+</html>
