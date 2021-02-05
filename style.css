@@ -8,6 +8,10 @@ a {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 .grid {
     display: grid;
     justify-content: center;
@@ -53,7 +57,9 @@ a {
     text-align: center;
 }
 
-
+.date {
+    color: white;
+}
 
 
 
