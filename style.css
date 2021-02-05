@@ -2,6 +2,7 @@ p {
     font-weight: 600;
     font-size: large;
     text-align: center;
+    color: white;
 }
 
 a {
@@ -57,9 +58,6 @@ h1 {
     text-align: center;
 }
 
-.date {
-    color: white;
-}
 
 
 
